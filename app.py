@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
-# ✅ 한글 폰트 설정
-plt.rcParams['font.family'] = 'Malgun Gothic'   # Windows 기본 한글 폰트
-plt.rcParams['axes.unicode_minus'] = False       # 마이너스 기호 깨짐 방지
+fm.fontManager.addfont("fonts/NanumGothic.ttf")
+plt.rcParams["font.family"] = "NanumGothic"
+plt.rcParams["axes.unicode_minus"] = False
 
 import streamlit as st
 import pandas as pd
